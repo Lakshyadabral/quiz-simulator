@@ -92,9 +92,7 @@ function parseQuestions(text) {
     // C. Something
     // D. Something
     // E. Something
-    const optionMatch = line.match(
-      /^([A-E])[\.\)]\s*(.*)$/
-    );
+    const optionMatch = line.match(/^([A-E])[\.\)]?\s+(.*)$/);
 
     if (optionMatch) {
       const letter = optionMatch[1];
