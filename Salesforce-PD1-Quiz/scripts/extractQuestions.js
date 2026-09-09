@@ -24,13 +24,16 @@ const outputFile = path.join(
 async function extractQuestions() {
   console.log("Reading DOCX...");
 
-  const result = await mammoth.extractRawText({
-    path: inputFile,
-  });
+  const styleMap = [
+    "p[style-name='Title'] => h1:fresh",
+    "p[style-name='Heading 1'] => h2:fresh",
+    "p[style-name='Heading 3'] => h3:fresh",
+  ];
 
-  const text = result.value;
+  const result = await mammoth.convertToHtml({ path: inputFile }, { styleMap });
+  const html = result.value;
 
-  const questions = parseQuestions(text);
+  const questions = parseQuestionsFromHtml(html);
 
   console.log(`Found ${questions.length} questions.`);
 
@@ -45,96 +48,74 @@ async function extractQuestions() {
   console.log(`Questions written to: ${outputFile}`);
 }
 
-function parseQuestions(text) {
-  const lines = text
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter(Boolean);
+function stripTags(s) {
+  return s
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .trim();
+}
+
+function parseQuestionsFromHtml(html) {
+  const blockRegex = /<(h3|p)[^>]*>([\s\S]*?)<\/\1>/g;
+  const blocks = [];
+  let m;
+  while ((m = blockRegex.exec(html)) !== null) {
+    blocks.push({ tag: m[1], text: stripTags(m[2]) });
+  }
 
   const questions = [];
-
   let currentQuestion = null;
 
-  for (const line of lines) {
-    // Detect:
-    // Question 1
-    // Question 2 (Choose 2)
-    // Question 6(Choose 3)
-    const questionMatch = line.match(
-      /^Question\s+(\d+)(?:\s*\(Choose\s+(\d+)\))?$/i
-    );
-
-    if (questionMatch) {
-      if (currentQuestion) {
-        questions.push(currentQuestion);
+  for (const block of blocks) {
+    if (block.tag === "h3") {
+      const qMatch = block.text.match(
+        /^Question\s+(\d+)(?:\s*\(Choose\s+(\d+)\))?/i
+      );
+      if (qMatch) {
+        if (currentQuestion) {
+          questions.push(currentQuestion);
+        }
+        currentQuestion = {
+          questionNumber: Number(qMatch[1]),
+          question: "",
+          options: [],
+          correctAnswers: [],
+          chooseCount: qMatch[2] ? Number(qMatch[2]) : 1,
+        };
       }
-
-      currentQuestion = {
-        questionNumber: Number(questionMatch[1]),
-        question: "",
-        options: [],
-        correctAnswers: [],
-        chooseCount: questionMatch[2]
-          ? Number(questionMatch[2])
-          : 1,
-      };
-
       continue;
     }
 
-    if (!currentQuestion) {
-      continue;
-    }
+    if (!currentQuestion) continue;
+    if (!block.text) continue;
 
-    // Detect answer choices:
-    // A. Something
-    // B. Something
-    // C. Something
-    // D. Something
-    // E. Something
-    const optionMatch = line.match(/^([A-E])[\.\)]?\s+(.*)$/);
+    const optionMatch = block.text.match(/^([A-E])[\.\)]?\s+(.*)$/);
 
     if (optionMatch) {
       const letter = optionMatch[1];
       const optionText = optionMatch[2];
-
       const isCorrect = optionText.includes("✅");
+      const cleanText = optionText.replace(/✅/g, "").trim();
 
-      const cleanText = optionText
-        .replace(/✅/g, "")
-        .trim();
-
-      currentQuestion.options.push({
-        letter,
-        text: cleanText,
-      });
-
+      currentQuestion.options.push({ letter, text: cleanText });
       if (isCorrect) {
         currentQuestion.correctAnswers.push(letter);
       }
-
       continue;
     }
 
-    // Ignore section headings
-    if (
-      line.toUpperCase() === "20 QUESTIONS SET" ||
-      line.toUpperCase().startsWith("[CORRECT ANSWER")
-    ) {
-      continue;
-    }
-
-    // Everything else belongs to the question text.
     if (currentQuestion.options.length === 0) {
       if (currentQuestion.question) {
         currentQuestion.question += " ";
       }
-
-      currentQuestion.question += line;
+      currentQuestion.question += block.text;
     }
   }
 
-  // Add final question
   if (currentQuestion) {
     questions.push(currentQuestion);
   }

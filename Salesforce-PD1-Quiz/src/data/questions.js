@@ -39,11 +39,11 @@ export const questions = [
       },
       {
         "letter": "C",
-        "text": "enit ()"
+        "text": "init()"
       },
       {
         "letter": "D",
-        "text": "ffireEvent ()"
+        "text": "fireEvent()"
       }
     ],
     "correctAnswers": [
@@ -61,7 +61,7 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Create the Picklist on each object and select \"Restrict picklist to the values defined in the value set\","
+        "text": "Create the Picklist on each object and select \"Restrict picklist to the values defined in the value set\"."
       },
       {
         "letter": "C",
@@ -79,7 +79,7 @@ export const questions = [
   },
   {
     "questionNumber": 4,
-    "question": "Universal Containers decides to use purely declarative development to build out a new Salesforce application. Which two options can be used to build out the business logic layer for this application? Choose two answers",
+    "question": "Universal Containers decides to use purely declarative development to build out a new Salesforce application. Which two options can be used to build out the business logic layer for this application?",
     "options": [
       {
         "letter": "A",
@@ -106,7 +106,7 @@ export const questions = [
   },
   {
     "questionNumber": 5,
-    "question": "Ursa Major Solar has a custom object,ServiceJob__c , with an optional Lookup field to Account called Parcner_Service Providers. The Totaljobs__c field on Account tracks the total number of ServiceJob__c  records to which 2 partner service provider Account Is related. What is the most efficient way to ensure that the Totaljobs__c field is kept up to date?",
+    "question": "Ursa Major Solar has a custom object, ServiceJob__c, with an optional Lookup field to Account called Partner_Service_Provider__c. The Totaljobs__c field on Account tracks the total number of ServiceJob__c records to which a partner service provider Account is related. What is the most efficient way to ensure that the Totaljobs__c field is kept up to date?",
     "options": [
       {
         "letter": "A",
@@ -114,7 +114,7 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Create a record-triggered flow on Servicejob__c."
+        "text": "Create a record-triggered flow on ServiceJob__c."
       },
       {
         "letter": "C",
@@ -168,11 +168,11 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer completed modifications to a customized feature that is comprised of two elements:"
+        "text": "developer completed modifications to a customized feature that is comprised of two elements: Apex trigger Trigger handler Apex class What are two factors that the developer must take into account to properly deploy the modification to the production environment?"
       },
       {
         "letter": "A",
-        "text": "All methods in the test dasses must use @isTest."
+        "text": "All methods in the test classes must use @isTest."
       },
       {
         "letter": "B",
@@ -184,14 +184,14 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "Go Apex classes must have at least 75% code coverage org-wide."
+        "text": "All Apex classes must have at least 75% code coverage org-wide."
       }
     ],
     "correctAnswers": [
       "C",
       "D"
     ],
-    "chooseCount": 1
+    "chooseCount": 2
   },
   {
     "questionNumber": 8,
@@ -199,7 +199,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "custom exception class cannot contain member variables or methods,"
+        "text": "custom exception class cannot contain member variables or methods."
       },
       {
         "letter": "B",
@@ -211,11 +211,11 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "custom exception class name must end with \"Exception\","
+        "text": "custom exception class name must end with \"Exception\"."
       },
       {
         "letter": "E",
-        "text": "custom exception class can implement one or many interfaces,"
+        "text": "custom exception class can implement one or many interfaces."
       }
     ],
     "correctAnswers": [
@@ -257,7 +257,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer created a Lightning web component called status Component to be inserted into the Account record page."
+        "text": "developer created a Lightning web component called status Component to be inserted into the Account record page. Which two things should the developer do to make this component available?"
       },
       {
         "letter": "A",
@@ -273,7 +273,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "Set isExposed to true in the statusComponent.js-meta.xmi file."
+        "text": "Set isExposed to true in the statusComponent.js-meta.xml file."
       }
     ],
     "correctAnswers": [
@@ -318,7 +318,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer must implement a CheckPaymentProcessor class that provides check processing payment capabilities that adhere to what is defined for payments in the PaymentProcessor interface."
+        "text": "developer must implement a CheckPaymentProcessor class that provides check processing payment capabilities that adhere to what is defined for payments in the PaymentProcessor interface. public interface PaymentProcessor { void pay(Decimal amount); } Which implementation is correct to use the Payment Processor interface class?"
       },
       {
         "letter": "A",
@@ -360,7 +360,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "Calling a method that is extemal to the main controller for the Lightning web component"
+        "text": "Calling a method that is external to the main controller for the Lightning web component"
       }
     ],
     "correctAnswers": [
@@ -402,7 +402,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer must troubleshoot to pinpoint the causes of performance issues when a custom page loads in their org."
+        "text": "developer must troubleshoot to pinpoint the causes of performance issues when a custom page loads in their org. Which tool should the developer use to troubleshoot?"
       },
       {
         "letter": "A",
@@ -415,6 +415,10 @@ export const questions = [
       {
         "letter": "C",
         "text": "Developer Console"
+      },
+      {
+        "letter": "D",
+        "text": "AppExchange"
       }
     ],
     "correctAnswers": [
@@ -428,11 +432,11 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer is migrating a Visualforce page into a Lightning web component."
+        "text": "developer is migrating a Visualforce page into a Lightning web component. The Visualforce page shows information about a single record. The developer decides to use Lightning Data Service to access record data. Which security consideration should the developer be aware of?"
       },
       {
         "letter": "A",
-        "text": "The .shecessible;) method must be used for field-level access checks."
+        "text": "The .isAccessible() method must be used for field-level access checks."
       },
       {
         "letter": "B",
@@ -444,7 +448,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "The with shearing keyword must be used to enforce sharing rules."
+        "text": "The with sharing keyword must be used to enforce sharing rules."
       }
     ],
     "correctAnswers": [
@@ -454,7 +458,7 @@ export const questions = [
   },
   {
     "questionNumber": 17,
-    "question": "Universal Containers has a support process that allows users to request support from its engineering team using a custom object, Engineering_Support__c. Users should be able to associate multiple Engineering_Support__c records to a single Opportunity record. Additionally, aggregate information about the Engineering_Suppert__c records should be shown on the Opportunity record. Which relationship field should be implemented to support these requirements?",
+    "question": "Universal Containers has a support process that allows users to request support from its engineering team using a custom object, Engineering_Support__c. Users should be able to associate multiple Engineering_Support__c records to a single Opportunity record. Additionally, aggregate information about the Engineering_Support__c records should be shown on the Opportunity record. Which relationship field should be implemented to support these requirements?",
     "options": [
       {
         "letter": "A",
@@ -462,7 +466,7 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Lookup field from Opportunity to Engineering _Suppors__s"
+        "text": "Lookup field from Opportunity to Engineering _Support__c"
       },
       {
         "letter": "C",
@@ -470,7 +474,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "Lookup field from Engineering Suppert__c to Opportunity"
+        "text": "Lookup field from Engineering Support__c to Opportunity"
       }
     ],
     "correctAnswers": [
@@ -516,19 +520,23 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer needs to create a baseline set of data (Accounts, Contacts, Products, Assets) for an entire suite of tests allowing them to test independent requirements for various types of Salesforce Cases."
+        "text": "developer needs to create a baseline set of data (Accounts, Contacts, Products, Assets) for an entire suite of tests allowing them to test independent requirements for various types of Salesforce Cases. Which approach can efficiently generate the required data for each unit test?"
       },
       {
         "letter": "A",
-        "text": "Use @TestSetup with a void method,"
+        "text": "Use @TestSetup with a void method."
       },
       {
         "letter": "B",
-        "text": "Create test data before Test.etartTest |) in the unit test."
+        "text": "Create test data before Test.startTest() in the unit test."
       },
       {
         "letter": "C",
-        "text": "Create a mock using the Stub APL."
+        "text": "Create a mock using the Stub API."
+      },
+      {
+        "letter": "D",
+        "text": "Add @IsTest (seeAllData=true) at the start of the unit test class."
       }
     ],
     "correctAnswers": [
@@ -574,7 +582,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "Add a master-detail field on the Global Address object to the Account object,"
+        "text": "Add a master-detail field on the Global Address object to the Account object."
       },
       {
         "letter": "B",
@@ -582,7 +590,7 @@ export const questions = [
       },
       {
         "letter": "C",
-        "text": "Add a master-detail field on the Account object to the Global Address object,"
+        "text": "Add a master-detail field on the Account object to the Global Address object."
       },
       {
         "letter": "D",
@@ -653,7 +661,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "development team wants to use a deployment script to automatically deploy to a sandbox during their development cycles."
+        "text": "development team wants to use a deployment script to automatically deploy to a sandbox during their development cycles. Which two tools can they use to run a script that deploys to a sandbox?"
       },
       {
         "letter": "A",
@@ -684,7 +692,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer has identified a method in an Apex class that performs resource intensive actions in memory by iterating over the result set of a SOQL statement on the account. The method also performs a DML statement to save the changes to the database."
+        "text": "developer has identified a method in an Apex class that performs resource intensive actions in memory by iterating over the result set of a SOQL statement on the account. The method also performs a DML statement to save the changes to the database. Which two techniques should the developer implement as a best practice to ensure transaction control and avoid exceeding governor limits?"
       },
       {
         "letter": "A",
@@ -700,7 +708,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "Use the #Re2d0nly annotation to bypass the number of rows returned by a SOQL."
+        "text": "Use the @ReadOnly annotation to bypass the number of rows returned by a SOQL."
       }
     ],
     "correctAnswers": [
@@ -715,7 +723,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer is asked to create a Visuatforce page that lists the contacts owned by the current user. This component will be embedded in a Lightning page."
+        "text": "developer is asked to create a Visuatforce page that lists the contacts owned by the current user. This component will be embedded in a Lightning page. Without writing unnecessary code, which controller should be used for this purpose?"
       },
       {
         "letter": "A",
@@ -728,6 +736,10 @@ export const questions = [
       {
         "letter": "C",
         "text": "Standard list controller"
+      },
+      {
+        "letter": "D",
+        "text": "Lightning controller"
       }
     ],
     "correctAnswers": [
@@ -741,7 +753,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer has a single custom controller class that works with a Visuatforce Wizard to support creating and editing multiple sObjects."
+        "text": "developer has a single custom controller class that works with a Visuatforce Wizard to support creating and editing multiple sObjects. The wizard accepts data from user inputs across multiple Visualforce pages and frame a parameter on the initial URL. Which three statements are useful inside the unit test to effectively test the custom controller?"
       },
       {
         "letter": "A",
@@ -760,7 +772,7 @@ export const questions = [
         "text": "insert pageRef;"
       },
       {
-        "letter": "D",
+        "letter": "E",
         "text": "public ExtendedController(ApexPages.StandardController cntrl) { }"
       }
     ],
@@ -804,7 +816,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer creates a new Apex trigger with a helper class, and writes a test class that only exercises 95% coverage of the new Apex helper class."
+        "text": "developer creates a new Apex trigger with a helper class, and writes a test class that only exercises 95% coverage of the new Apex helper class. Change Set deployment to production fails with the test coverage warning: \"Test coverage of selected Apex Triggers is 0%, at least 1% test coverage is required.\" What should the developer do to successfully deploy the new Apex trigger and helper class?"
       },
       {
         "letter": "A",
@@ -861,7 +873,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer created this Apex trigger that calls MyClass.myStacticMethod:"
+        "text": "developer created this Apex trigger that calls MyClass.myStaticMethod: trigger myTrigger on Contact (before insert) { MyClass.myStaticMethod(Trigger.new); The developer creates a test class with a test method that calls MyClass.myStaticMethod directly, resulting in 87% overall code coverage. What happens when the developer tries to deploy the trigger and two classes to production, assuming no other code exists?"
       },
       {
         "letter": "A",
@@ -877,7 +889,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "The deployment passes because both dasses and the trigger were included in the deployment."
+        "text": "The deployment passes because both classes and the trigger were included in the deployment."
       }
     ],
     "correctAnswers": [
@@ -1000,7 +1012,7 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Use component events to communicate actions that should be handled at the application level,"
+        "text": "Use component events to communicate actions that should be handled at the application level."
       },
       {
         "letter": "C",
@@ -1050,7 +1062,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer has a Visualforce page and custom controller to save Account records. The developer wants to display any validation rule violations to the user."
+        "text": "developer has a Visualforce page and custom controller to save Account records. The developer wants to display any validation rule violations to the user. How can the developer make sure that validation rule violations are displayed?"
       },
       {
         "letter": "A",
@@ -1058,7 +1070,7 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Include <spex:messezes> on the Visualforce page."
+        "text": "Include <apex:pageMessages> on the Visualforce page."
       },
       {
         "letter": "C",
@@ -1066,7 +1078,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "Perform the DML using the Dacebese.upsert () method."
+        "text": "Perform the DML using the Database.upsert() method."
       }
     ],
     "correctAnswers": [
@@ -1080,7 +1092,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer created these three Rollup Summary fields in the custom object, Project__c: Totai_timesheets_c"
+        "text": "developer created these three Rollup Summary fields in the custom object, Project__c: Total_Timesheets__c Total_Approved_Timesheets__c Total_Rejected_Timesheets__c The developer is asked to create a new field that shows the ratio between rejected and approved timesheets for a given project. Which should the developer use to implement the business requirement in order to minimize maintenance overhead?"
       },
       {
         "letter": "A",
@@ -1091,11 +1103,17 @@ export const questions = [
         "text": "Apex trigger"
       },
       {
+        "letter": "C",
+        "text": "Formula field"
+      },
+      {
         "letter": "D",
         "text": "Record-triggered flow"
       }
     ],
-    "correctAnswers": [],
+    "correctAnswers": [
+      "C"
+    ],
     "chooseCount": 1
   },
   {
@@ -1104,7 +1122,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "Importing data using the Data Loader and the Bulk APL"
+        "text": "Importing data using the Data Loader and the Bulk API"
       },
       {
         "letter": "B",
@@ -1116,7 +1134,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "_ Updating addresses using the Mess Address update tool"
+        "text": "_ Updating addresses using the Mass Address update tool"
       }
     ],
     "correctAnswers": [
@@ -1134,11 +1152,11 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Create an account approval process,"
+        "text": "Create an account approval process."
       },
       {
         "letter": "C",
-        "text": "Build a flow with Flow Builder,"
+        "text": "Build a flow with Flow Builder."
       },
       {
         "letter": "D",
@@ -1156,7 +1174,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer must provide custom user interfaces when users edit a Contact in either Salesforce Classic of Lightning Experience."
+        "text": "developer must provide custom user interfaces when users edit a Contact in either Salesforce Classic of Lightning Experience. What should the developer use to override the Contact's Edit button and provide this functionality?"
       },
       {
         "letter": "A",
@@ -1186,7 +1204,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer considers the following snippet of code:"
+        "text": "developer considers the following snippet of code: Boolean isOK; // defaults to null Integer x; String theString = 'Hello'; if (isOK == false && theString == 'Hello') { x = 1; } else if (isOK == true && theString == 'Hello') { x = 2; } else if (isOK != null && theString == 'Hello') { x = 3; } else { x = 4; } Based on this code, what is the value of x?"
       },
       {
         "letter": "A",
@@ -1216,7 +1234,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer wants to import 500 Opportunity records into a sandbox."
+        "text": "developer wants to import 500 Opportunity records into a sandbox. Why should the developer choose to use Data Loader instead of Data [Import Wizard?"
       },
       {
         "letter": "A",
@@ -1268,7 +1286,7 @@ export const questions = [
   },
   {
     "questionNumber": 6,
-    "question": "Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application, One of the application modules allows the user to calculate body fat using the Apex Class, BodyFat, and its method, calculateBodyFat (). The product owner wants to ensure this method is accessible by the consumer of the application when developing customizations outside the ISVs package namespace. Which approach should a developer take to ensuré calculateBodyFat () is accessible outside the package namespace?",
+    "question": "Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application, One of the application modules allows the user to calculate body fat using the Apex Class, BodyFat, and its method, calculateBodyFat (). The product owner wants to ensure this method is accessible by the consumer of the application when developing customizations outside the ISV's package namespace. Which approach should a developer take to ensure calculateBodyFat () is accessible outside the package namespace?",
     "options": [
       {
         "letter": "A",
@@ -1294,27 +1312,27 @@ export const questions = [
   },
   {
     "questionNumber": 7,
-    "question": "What are three considerations when using the GTnvocapieMernod annotation in Apex?",
+    "question": "What are three considerations when using the @InvocableMethod annotation in Apex?",
     "options": [
       {
         "letter": "A",
-        "text": "A method using the @InvocaDieNethod annotation can have multiple input parameters."
+        "text": "A method using the @InvocableMethod annotation can have multiple input parameters."
       },
       {
         "letter": "B",
-        "text": "A method using the @tnvocadieMechod annotation must define a return value,"
+        "text": "A method using the @InvocableMethod annotation must define a return value."
       },
       {
         "letter": "C",
-        "text": "A method using the @InvocabieNetnod annotation must be declared as static, ."
+        "text": "A method using the @InvocableMethod annotation must be declared as static, ."
       },
       {
         "letter": "D",
-        "text": "Only one method using the @tnvocableMethod annotation can be defined per Apex class."
+        "text": "Only one method using the @InvocableMethod annotation can be defined per Apex class."
       },
       {
         "letter": "E",
-        "text": "A method using the @InvocadieNethod annotation can be declared as Public or Global."
+        "text": "A method using the @InvocableMethod annotation can be declared as Public or Global."
       }
     ],
     "correctAnswers": [
@@ -1334,11 +1352,11 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Include a savepoint and Databese.sollback|},"
+        "text": "Include a savepoint and Database.rollback."
       },
       {
         "letter": "C",
-        "text": "Include a try/catch block to the Apex class,"
+        "text": "Include a try/catch block to the Apex class."
       },
       {
         "letter": "D",
@@ -1364,7 +1382,7 @@ export const questions = [
       },
       {
         "letter": "C",
-        "text": "Use Lead Conversion field mapping,"
+        "text": "Use Lead Conversion field mapping."
       },
       {
         "letter": "D",
@@ -1378,7 +1396,7 @@ export const questions = [
   },
   {
     "questionNumber": 10,
-    "question": "Which two settings must be defined in order to update a record of # junction object?",
+    "question": "Which two settings must be defined in order to update a record of a junction object?",
     "options": [
       {
         "letter": "A",
@@ -1409,11 +1427,11 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer is debugging the following code to determine why Accounts are not being created,"
+        "text": "developer is debugging the following code to determine why Accounts are not being created, List<Account> accts = getAccounts(); // to getaccounts implemented elsewhere Database.insert(accts, false); How should the code be altered to help debug the issue?"
       },
       {
         "letter": "A",
-        "text": "Collect the insert method return value in a SaveResuit variable."
+        "text": "Collect the insert method return value in a SaveResult variable."
       },
       {
         "letter": "B",
@@ -1421,11 +1439,11 @@ export const questions = [
       },
       {
         "letter": "C",
-        "text": "Set the second insert method parameter to true,"
+        "text": "Set the second insert method parameter to true."
       },
       {
         "letter": "D",
-        "text": "Add a try-catch around the insert method,"
+        "text": "Add a try-catch around the insert method."
       }
     ],
     "correctAnswers": [
@@ -1468,6 +1486,10 @@ export const questions = [
         "text": "The method must specify the (cacheable=true) attribute."
       },
       {
+        "letter": "B",
+        "text": "The method must specify the (continuation=true) attribute."
+      },
+      {
         "letter": "C",
         "text": "The method must be annotated with the @InvocableMethod annotation."
       },
@@ -1496,6 +1518,10 @@ export const questions = [
         "text": "Use the with sharing keyword on the class declaration."
       },
       {
+        "letter": "B",
+        "text": "Use the schema describe calls to determine if the logged-in user has access to the Account object."
+      },
+      {
         "letter": "C",
         "text": "Use the UserInfo Apex class to filter all SOQL queries to return records owned by the logged-in user."
       },
@@ -1515,7 +1541,11 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer created a custom order management app that uses an Apex class. The order is represented by an Order object and an Order Item object that has a master-detail relationship to Order. During order processing, an order may be split into multiple orders."
+        "text": "developer created a custom order management app that uses an Apex class. The order is represented by an Order object and an Order Item object that has a master-detail relationship to Order. During order processing, an order may be split into multiple orders. Which should a developer do to allow their code to move some existing Order Item records to a new Order record?"
+      },
+      {
+        "letter": "A",
+        "text": "Create a junction object between Order Item and Order."
       },
       {
         "letter": "B",
@@ -1577,6 +1607,10 @@ export const questions = [
       {
         "letter": "C",
         "text": "Lightning flows"
+      },
+      {
+        "letter": "D",
+        "text": "Email messages"
       }
     ],
     "correctAnswers": [
@@ -1594,21 +1628,27 @@ export const questions = [
         "text": "Workbench"
       },
       {
+        "letter": "B",
+        "text": "Salesforce CLI"
+      },
+      {
+        "letter": "C",
+        "text": "Sandbox refresh"
+      },
+      {
         "letter": "D",
         "text": "Developer Console"
       }
     ],
-    "correctAnswers": [],
+    "correctAnswers": [
+      "B"
+    ],
     "chooseCount": 1
   },
   {
     "questionNumber": 19,
-    "question": "An org tracks customer orders using the Order and Line Item objects. The Line Item object has a master-detail relationship to the Order object.",
+    "question": "An org tracks customer orders using the Order and Line Item objects. The Line Item object has a master-detail relationship to the Order object. A developer has a requirement to calculate the total order amount for an Order and the line amount on each Line Item based on quantity and price. What is the correct implementation?",
     "options": [
-      {
-        "letter": "A",
-        "text": "developer has a requirement to calculate the total order amount for an Order and the line amount on each Line Item based on quantity and price."
-      },
       {
         "letter": "A",
         "text": "Implement the line item amount as a currency field and the order amount as a SUM formula field."
@@ -1640,11 +1680,21 @@ export const questions = [
         "text": "Workbench"
       },
       {
+        "letter": "B",
+        "text": "Salesforce CLI"
+      },
+      {
+        "letter": "C",
+        "text": "Sandbox refresh"
+      },
+      {
         "letter": "D",
         "text": "Developer Console"
       }
     ],
-    "correctAnswers": [],
+    "correctAnswers": [
+      "B"
+    ],
     "chooseCount": 1
   },
   {
@@ -1653,7 +1703,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer must create a Lightning component that allows users to input Contact record information to create a Contact record, including a Salary__c custom field."
+        "text": "developer must create a Lightning component that allows users to input Contact record information to create a Contact record, including a Salary__c custom field. What should the developer use, along with a lightning-record-edit-form, so that the Salary__c field functions as a currency input and is only viewable and editable by users that have the correct field-level permissions on Salary__c?"
       },
       {
         "letter": "A",
@@ -1683,7 +1733,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "company has been adding data to Salesforce and has not done a good job of limiting the creation of duplicate Lead records. The developer is considering writing an Apex process to identify duplicates and merge the records together."
+        "text": "company has been adding data to Salesforce and has not done a good job of limiting the creation of duplicate Lead records. The developer is considering writing an Apex process to identify duplicates and merge the records together. Which two statements are valid considerations when using merge?"
       },
       {
         "letter": "A",
@@ -1766,11 +1816,11 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "Renaming or replacing 2 picklist entry"
+        "text": "Renaming or replacing a picklist entry"
       },
       {
         "letter": "B",
-        "text": "Changing 2 user's default division when the transfer division option is checked"
+        "text": "Changing a user's default division when the transfer division option is checked"
       },
       {
         "letter": "C",
@@ -1792,23 +1842,23 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "software company uses the following objects and relationships:"
+        "text": "software company uses the following objects and relationships: - Case: to handle customer support issues - Defect__c: a custom object to represent known issues with the company's software - Case_Defect__c: a junction object between Case and Defect__c to represent that a defect is a cause of a customer Issue Case and Defect__c have Private organization-wide defaults. What should be done to share a specific Case_Defect__c record with a user?"
       },
       {
         "letter": "A",
-        "text": "Share the Case_Detect__c record."
+        "text": "Share the Case_Defect__c record."
       },
       {
         "letter": "B",
-        "text": "Share the parent Case and Detect__c records."
+        "text": "Share the parent Case and Defect__c records."
       },
       {
         "letter": "C",
-        "text": "'Share the parent Case record."
+        "text": "Share the parent Case record."
       },
       {
         "letter": "D",
-        "text": "Share the parent Detect__c record."
+        "text": "Share the parent Defect__c record."
       }
     ],
     "correctAnswers": [
@@ -1822,7 +1872,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "custom picklist field, Food_Preference__c, exists on a custom object. The picklist contains the following options: 'Vegan', Kosher, 'No Preference'. The developer must ensure a value is populated every time a record Is created or updated."
+        "text": "custom picklist field, Food_Preference__c, exists on a custom object. The picklist contains the following options: 'Vegan', 'Kosher', 'No Preference'. The developer must ensure a value is populated every time a record is created or updated. What is the optimal way to ensure a value is selected every time a record is saved?"
       },
       {
         "letter": "A",
@@ -1860,11 +1910,11 @@ export const questions = [
       },
       {
         "letter": "C",
-        "text": "@RenoteAction(cacheable= true)"
+        "text": "@RemoteAction(cacheable= true)"
       },
       {
         "letter": "D",
-        "text": "@RemoteActica"
+        "text": "@RemoteAction"
       }
     ],
     "correctAnswers": [
@@ -1883,10 +1933,24 @@ export const questions = [
       {
         "letter": "B",
         "text": "Flows"
+      },
+      {
+        "letter": "C",
+        "text": "Relationships"
+      },
+      {
+        "letter": "D",
+        "text": "Triggers"
+      },
+      {
+        "letter": "E",
+        "text": "Roll-up summaries"
       }
     ],
     "correctAnswers": [
-      "A"
+      "A",
+      "C",
+      "E"
     ],
     "chooseCount": 3
   },
@@ -1896,7 +1960,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer needs to have records with specific field values in order to test a new Apex class."
+        "text": "developer needs to have records with specific field values in order to test a new Apex class. What should the developer do to ensure the data is available to the test?"
       },
       {
         "letter": "A",
@@ -1909,10 +1973,14 @@ export const questions = [
       {
         "letter": "C",
         "text": "Use SOQL to query the org for the required data."
+      },
+      {
+        "letter": "D",
+        "text": "@Use Test. loadData() and reference a CSV file in a static resource."
       }
     ],
     "correctAnswers": [
-      "A"
+      "D"
     ],
     "chooseCount": 1
   },
@@ -1978,7 +2046,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer wants to improve runtime performance of Apex calls by caching results on the client."
+        "text": "developer wants to improve runtime performance of Apex calls by caching results on the client. What is the most efficient way to implement this and follow best practices?"
       },
       {
         "letter": "A",
@@ -2008,7 +2076,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "Use a formula field,"
+        "text": "Use a formula field."
       },
       {
         "letter": "B",
@@ -2034,7 +2102,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "Salesforce administrator used Flow Builder to create a flow named \"accountOnboarding\". The flow must be used inside an Aura component."
+        "text": "Salesforce administrator used Flow Builder to create a flow named \"accountOnboarding\". The flow must be used inside an Aura component. Which tag should a developer use to display the flow in the component?"
       },
       {
         "letter": "A",
@@ -2060,7 +2128,7 @@ export const questions = [
   },
   {
     "questionNumber": 16,
-    "question": "In the following example, which sharing context will ryMernoa execute when it is invoked? public Class myClass { Public void myMethod() {/* implementation */} }",
+    "question": "In the following example, which sharing context will myMethod execute when it is invoked? public class myClass { public void myMethod() {/* implementation */} }",
     "options": [
       {
         "letter": "A",
@@ -2090,7 +2158,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer created a child Lightning web component nested inside a parent Lightning web component. The parent component needs to pass a string value to the child component."
+        "text": "developer created a child Lightning web component nested inside a parent Lightning web component. The parent component needs to pass a string value to the child component. In which two ways can this be accomplished?"
       },
       {
         "letter": "A",
@@ -2099,9 +2167,18 @@ export const questions = [
       {
         "letter": "B",
         "text": "The parent component can invoke a method in the child component."
+      },
+      {
+        "letter": "C",
+        "text": "The parent component can use a custom event to pass the data to the child component."
+      },
+      {
+        "letter": "D",
+        "text": "The parent component can use a public property to pass the data to the child component."
       }
     ],
     "correctAnswers": [
+      "A",
       "B"
     ],
     "chooseCount": 2
@@ -2112,7 +2189,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer at Universal Containers is tasked with implementing a new Salesforce application that will be maintained completely by their company's Salesforce administrator."
+        "text": "developer at Universal Containers is tasked with implementing a new Salesforce application that will be maintained completely by their company's Salesforce administrator. Which two options should be considered for building out the business logic layer of the application?"
       },
       {
         "letter": "A",
@@ -2121,10 +2198,19 @@ export const questions = [
       {
         "letter": "B",
         "text": "Scheduled Jobs"
+      },
+      {
+        "letter": "C",
+        "text": "Invocable Actions"
+      },
+      {
+        "letter": "D",
+        "text": "Validation Rules"
       }
     ],
     "correctAnswers": [
-      "A"
+      "A",
+      "D"
     ],
     "chooseCount": 2
   },
@@ -2139,14 +2225,24 @@ export const questions = [
       {
         "letter": "B",
         "text": "Add a new Update Records element."
+      },
+      {
+        "letter": "C",
+        "text": "Add a new Create Records element."
+      },
+      {
+        "letter": "D",
+        "text": "Add a new Roll Back Records element."
       }
     ],
-    "correctAnswers": [],
+    "correctAnswers": [
+      "C"
+    ],
     "chooseCount": 1
   },
   {
     "questionNumber": 20,
-    "question": "Vihere are two locations a developer can look to find information about the status of batch or future methods?",
+    "question": "Where are two locations a developer can look to find information about the status of batch or future methods?",
     "options": [
       {
         "letter": "A",
@@ -2177,7 +2273,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "custom Visualforce controller calls the ApexPages.addMessage() method, but no messages are rendering on the page."
+        "text": "custom Visualforce controller calls the ApexPages.addMessage() method, but no messages are rendering on the page. Which component should be added to the Visualforce page to display the message?"
       },
       {
         "letter": "A",
@@ -2287,7 +2383,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "software company uses the following objects and relationships:"
+        "text": "software company uses the following objects and relationships: - Case: to handle customer support issues - Defect__c: a custom object to represent known issues with the company's software - Case_Defect__c: a junction object between Case and Defect__c to represent that a defect is a cause of a customer issue Case and Defect__c have Private organization-wide defaults (OWD). What should be done to share a specific Case_Defect__c record with a user?"
       },
       {
         "letter": "A",
@@ -2296,6 +2392,10 @@ export const questions = [
       {
         "letter": "B",
         "text": "Share the parent Case and Defect__c records."
+      },
+      {
+        "letter": "C",
+        "text": "Share the parent Case record only."
       },
       {
         "letter": "D",
@@ -2336,7 +2436,7 @@ export const questions = [
   },
   {
     "questionNumber": 7,
-    "question": "The Job Application__c custom object has a field that is a master-detail relationship to the Contact object, where the Contact object Is the master. As part of a feature implementation, a developer needs to retrieve a list containing all Contact records where the related Account Industry Is 'Technology', while also retrieving the Contact's Job Application__c records. Based on the object's relationships, what is the most efficient statement to retrieve the list of Contacts?",
+    "question": "The Job Application__c custom object has a field that is a master-detail relationship to the Contact object, where the Contact object is the master. As part of a feature implementation, a developer needs to retrieve a list containing all Contact records where the related Account Industry Is 'Technology', while also retrieving the Contact's Job Application__c records. Based on the object's relationships, what is the most efficient statement to retrieve the list of Contacts?",
     "options": [
       {
         "letter": "A",
@@ -2393,7 +2493,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer is creating a page that allows users to create multiple Opportunities. The developer is asked to verify the current user's default Opportunity record type, and set certain default values based on the record type before inserting the record."
+        "text": "developer is creating a page that allows users to create multiple Opportunities. The developer is asked to verify the current user's default Opportunity record type, and set certain default values based on the record type before inserting the record. How can the developer find the current user's default record type?"
       },
       {
         "letter": "A",
@@ -2402,6 +2502,10 @@ export const questions = [
       {
         "letter": "B",
         "text": "Use Opportunity.SObjectType.getDescribe () .getRecordTypeInfos() to get a list of record types, and iterate through them until isDefaultRecordTypeMapping () is true."
+      },
+      {
+        "letter": "C",
+        "text": "Query the Profile where the ID equals userInfo.getProfileID() and then use the profile.Opportunity.getDefaultRecordType() method"
       },
       {
         "letter": "D",
@@ -2419,7 +2523,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer created a new after insert trigger on the Lead object that creates Task records for each Lead. After deploying to production, an existing outside integration that inserts Lead records in batches to Salesforce is occasionally reporting total batch failures being caused by the Task insert statement. This causes the integration process in the outside system to stop, requiring a manual restart."
+        "text": "developer created a new after insert trigger on the Lead object that creates Task records for each Lead. After deploying to production, an existing outside integration that inserts Lead records in batches to Salesforce is occasionally reporting total batch failures being caused by the Task insert statement. This causes the integration process in the outside system to stop, requiring a manual restart. Which change should the developer make to allow the integration to continue when some records in a batch cause failures due to the Task insert statement, so that manual restarts are not needed?"
       },
       {
         "letter": "A",
@@ -2445,7 +2549,7 @@ export const questions = [
   },
   {
     "questionNumber": 11,
-    "question": "How should a developer write unit tests for a private method In an Apex class?",
+    "question": "How should a developer write unit tests for a private method in an Apex class?",
     "options": [
       {
         "letter": "A",
@@ -2475,11 +2579,11 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer needs to have records with specific field values In order to test a new Apex class."
+        "text": "developer needs to have records with specific field values in order to test a new Apex class. What should the developer do to ensure the data is available to the test?"
       },
       {
         "letter": "A",
-        "text": "Use Test. loadData() and reference a CSV file in a static resource,"
+        "text": "Use Test. loadData() and reference a CSV file in a static resource."
       },
       {
         "letter": "B",
@@ -2501,7 +2605,7 @@ export const questions = [
   },
   {
     "questionNumber": 13,
-    "question": "The sales management team at Universal! Containers require that the Lead Source field of the Lead record be populated when a Lead is converted. What should be done to ensure that a user populates the Lead Source field prior to converting a Lead?",
+    "question": "The sales management team at Universal Containers require that the Lead Source field of the Lead record be populated when a Lead is converted. What should be done to ensure that a user populates the Lead Source field prior to converting a Lead?",
     "options": [
       {
         "letter": "A",
@@ -2563,7 +2667,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "lead developer creates an Apex interface called Laptop. Consider the following code snippet:"
+        "text": "lead developer creates an Apex interface called Laptop. Consider the following code snippet: public class SilverLaptop{ //code implementation } How can a developer use the Laptop Interface within the silverLaptop class?"
       },
       {
         "letter": "A",
@@ -2625,7 +2729,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer must create a Drawlist class that provides capabilities defined in the Sortable and Drawable interfaces."
+        "text": "developer must create a Drawlist class that provides capabilities defined in the Sortable and Drawable interfaces. public interface Sortable { void sort(); } public interface Drawable { void draw(); }"
       },
       {
         "letter": "A",
@@ -2685,7 +2789,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer must modify the following code snippet to prevent the number of SOQL queries issued from exceeding the platform governor limit."
+        "text": "developer must modify the following code snippet to prevent the number of SOQL queries issued from exceeding the platform governor limit. public without sharing class OpportunityService { public static List<OpportunityLineItem> getOpportunityProducts(Set<Id> opportunityIds) { List<OpportunityLineItem> oppLineItems = new List<OpportunityLineItem>(); for (Id thisOppId : opportunityIds) { oppLineItems.addAll([ SELECT Id FROM OpportunityLineItem WHERE OpportunityId = :thisOppId ]); } return oppLineItems; } } The above method might be called during a trigger execution via a Lightning component. Which technique should be implemented to avoid reaching the governor limit?"
       },
       {
         "letter": "A",
@@ -2711,7 +2815,7 @@ export const questions = [
   },
   {
     "questionNumber": 20,
-    "question": "Which three statements are accurate about debug logs? (Choose 3)",
+    "question": "Which three statements are accurate about debug logs?",
     "options": [
       {
         "letter": "A",
@@ -2739,7 +2843,7 @@ export const questions = [
       "B",
       "E"
     ],
-    "chooseCount": 1
+    "chooseCount": 3
   },
   {
     "questionNumber": 1,
@@ -2773,7 +2877,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "company has been adding data to Salesforce and has not done a good job of limiting the creation of duplicate Lead records. The developer is considering writing an Apex process to identify duplicates and merge the records together."
+        "text": "company has been adding data to Salesforce and has not done a good job of limiting the creation of duplicate Lead records. The developer is considering writing an Apex process to identify duplicates and merge the records together. Which two statements are valid considerations when using merge?"
       },
       {
         "letter": "A",
@@ -2808,7 +2912,7 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Generate a Visualforce PDF with getcontentaAsPDF()."
+        "text": "Generate a Visualforce PDF with getContentAsPDF()."
       },
       {
         "letter": "C",
@@ -2830,11 +2934,11 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer must create a Lightning component that allows users to input Contact record information to create a Contact record, including a Salary _c custom field."
+        "text": "developer must create a Lightning component that allows users to input Contact record information to create a Contact record, including a Salary _c custom field. What should the developer use, along with a lightning-record-edit-form, so that salary __c field functions as a currency input and is only viewable and editable by users that have the correct field level permissions on Salary c?"
       },
       {
         "letter": "A",
-        "text": "lightning—formatted-number value=\"Salary cc\" format-style=\"currency\"> </lightning-formatted-number>"
+        "text": "lightning---formatted-number value=\"Salary cc\" format-style=\"currency\"> </lightning-formatted-number>"
       },
       {
         "letter": "B",
@@ -2910,7 +3014,7 @@ export const questions = [
   },
   {
     "questionNumber": 7,
-    "question": "Universal Containers has implemented an order management application, Each Order can have one or more Order Line items. The Order Line object Is related to the Order via a master-detail relationship. For each Order Line item, the total price is calculated by multiplying the Order Line item price with the quantity ordered. What is the best practice to get the sum of all Order Line item totals on the Order record?",
+    "question": "Universal Containers has implemented an order management application, Each Order can have one or more Order Line items. The Order Line object is related to the Order via a master-detail relationship. For each Order Line item, the total price is calculated by multiplying the Order Line item price with the quantity ordered. What is the best practice to get the sum of all Order Line item totals on the Order record?",
     "options": [
       {
         "letter": "A",
@@ -2940,7 +3044,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer created a child Lightning web component nested Inside a parent Lightning web component. The parent component needs to pass a string value to the child component."
+        "text": "developer created a child Lightning web component nested inside a parent Lightning web component. The parent component needs to pass a string value to the child component. In which two ways can this be accomplished?"
       },
       {
         "letter": "A",
@@ -2997,7 +3101,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer has an integer variable called maxAttempts. The developer needs to ensure that once maxAttempts Is initialized, it preserves its value for the length of the Apex transaction;"
+        "text": "developer has an integer variable called maxAttempts. The developer needs to ensure that once maxAttempts is initialized, it preserves its value for the length of the Apex transaction; while being able to share the variable''s state between trigger executions. How should the developer declare maxAttempts to meet these requirements?"
       },
       {
         "letter": "A",
@@ -3008,11 +3112,17 @@ export const questions = [
         "text": "Declare maxAttempts as a variable on a helper class."
       },
       {
+        "letter": "C",
+        "text": "Declare maxAttempts as a constant using the static and final keywords."
+      },
+      {
         "letter": "D",
         "text": "Declare maxAttempts as a member variable on the trigger definition."
       }
     ],
-    "correctAnswers": [],
+    "correctAnswers": [
+      "C"
+    ],
     "chooseCount": 1
   },
   {
@@ -3048,7 +3158,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer is tasked to perform a security review of the ContactSearch Apex class that exists in the system. Within the class, the developer identifies the following method as a security threat:"
+        "text": "developer is tasked to perform a security review of the ContactSearch Apex class that exists in the system. Within the class, the developer identifies the following method as a security threat: List<Contact> performSearch (String lastName) { return Database.query('SELECT Id, FirstName, LastName FROM Contact WHERE LastName Like $'t+lastNamet+'$'); } What are two ways the developer can update the method to prevent a SOQL injection attack?"
       },
       {
         "letter": "A",
@@ -3123,7 +3233,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "Use the ApexTestResuit class."
+        "text": "Use the ApexTestResult class."
       }
     ],
     "correctAnswers": [
@@ -3203,7 +3313,7 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Changing 4 user's default division when the transfer division option is checked"
+        "text": "Changing a user's default division when the transfer division option is checked"
       },
       {
         "letter": "C",
@@ -3225,7 +3335,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "PrimaryId_ custom field exists on the candidate __c custom object. The field is used to store each candidate's id number and is marked as Unique in the schema definition."
+        "text": "PrimaryId__c custom field exists on the Candidate__c custom object. The field is used to store each candidate's id number and is marked as Unique in the schema definition. As part of a data enrichment process, Universal Containers has a CSV file that contains updated data for all candidates in the system. The file contains each Candidate's primary id as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. Which technique should the developer implement to streamline the data upload?"
       },
       {
         "letter": "A",
@@ -3255,7 +3365,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "custom Visualforce controller calls the ApexPages.addMessage() method, but no messages are rendering on the page."
+        "text": "custom Visualforce controller calls the ApexPages.addMessage() method, but no messages are rendering on the page. Which component should be added to the Visualforce page to display the message?"
       },
       {
         "letter": "A",
@@ -3339,14 +3449,34 @@ export const questions = [
   },
   {
     "questionNumber": 2,
-    "question": "Refer to the following code snippet, that is part of a custom controller for a Visualforce page:public void updateContact(Contact thisContact) { thisContact.Is_Active__c = false; try { update thisContact; } catch (Exception e) { String errorMessage = 'An error occurred while updating the Contact. ' + e.getMessage(); ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.FATAL, errorMessage)); } } In which two ways can the try/catch block be enclosed to enforce object and field-level permissions and prevent the DML statement from being executed if the currently logged-in user does not have the appropriate level of access? Choose 2 answersA. Use if (Schema.sObjectType.Contact.isUpdateable()) ✅B. Use if (thisContact.OwnerId == UserInfo.getUserId()) C. Use if (Schema.sObjectType.Contact.fields.Is_Active__c.isUpdateable()) ✅D. Use if (Schema.sObjectType.Contact.isAccessible())",
-    "options": [],
-    "correctAnswers": [],
-    "chooseCount": 1
+    "question": "Refer to the following code snippet, that is part of a custom controller for a Visualforce page: public void updateContact(Contact thisContact) { thisContact.Is_Active__c = false; try { update thisContact; } catch (Exception e) { String errorMessage = 'An error occurred while updating the Contact. ' + e.getMessage(); ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.FATAL, errorMessage)); } } In which two ways can the try/catch block be enclosed to enforce object and field-level permissions and prevent the DML statement from being executed if the currently logged-in user does not have the appropriate level of access?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use if (Schema.sObjectType.Contact.isUpdateable())"
+      },
+      {
+        "letter": "B",
+        "text": "Use if (thisContact.OwnerId == UserInfo.getUserId())"
+      },
+      {
+        "letter": "C",
+        "text": "Use if (Schema.sObjectType.Contact.fields.Is_Active__c.isUpdateable())"
+      },
+      {
+        "letter": "D",
+        "text": "Use if (Schema.sObjectType.Contact.isAccessible())"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "C"
+    ],
+    "chooseCount": 2
   },
   {
     "questionNumber": 3,
-    "question": "Which two statements are true about using the @istestSetup annotation in an Apex test class?",
+    "question": "Which two statements are true about using the @TestSetup annotation in an Apex test class?",
     "options": [
       {
         "letter": "A",
@@ -3359,10 +3489,15 @@ export const questions = [
       {
         "letter": "C",
         "text": "A method defined with the @TestSetup annotation executes once for each test method in the test class and counts towards system limits."
+      },
+      {
+        "letter": "D",
+        "text": "In a test setup method, test data is inserted once and made available for all test methods in the test class."
       }
     ],
     "correctAnswers": [
-      "B"
+      "B",
+      "D"
     ],
     "chooseCount": 2
   },
@@ -3376,7 +3511,7 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "The test method does not use system.runas to execute as a specific user."
+        "text": "The test method does not use System.runAs to execute as a specific user."
       },
       {
         "letter": "C",
@@ -3420,8 +3555,12 @@ export const questions = [
   },
   {
     "questionNumber": 6,
-    "question": "A/V Computing tracks order information in custom objects called Order__c and Order_Line__c. Currently, all shipping information is stored in the Order__c object. The company wants to expand its order application to support split shipments so that any number of Order_Line__c records on a single Order__c can be shipped to different locations. What should a developer add to fulfill this requirement? A.Order_Shipment_Group__c object and a master-detail field on Order_Shipment_Group__c",
+    "question": "A/V Computing tracks order information in custom objects called Order__c and Order_Line__c. Currently, all shipping information is stored in the Order__c object. The company wants to expand its order application to support split shipments so that any number of Order_Line__c records on a single Order__c can be shipped to different locations. What should a developer add to fulfill this requirement?",
     "options": [
+      {
+        "letter": "A",
+        "text": "Order_Shipment_Group__c object and a master-detail field on Order_Shipment_Group__c"
+      },
       {
         "letter": "B",
         "text": "order_Shipment_Group__c object and master-detail fields to both Order__c and Order_Line__c."
@@ -3429,6 +3568,10 @@ export const questions = [
       {
         "letter": "C",
         "text": "An Order_Shipment_Group__c object and a master-detail field on Order_Line__c."
+      },
+      {
+        "letter": "D",
+        "text": "Order_Shipment_Group__c object and a master-detail field on Order__c."
       }
     ],
     "correctAnswers": [
@@ -3442,7 +3585,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer createc these three Rollup Summary fields in the custom object, Project__c:"
+        "text": "developer created these three Rollup Summary fields in the custom object, Project__c: Total_Timesheets__c Total_Approved_Timesheets__c Total_Rejected_Timesheets__c The developer is asked to create a new field that shows the ratio between rejected and approved timesheets for a given project. Which should the developer use to implement the business requirement in order to minimize maintenance overhead?"
       },
       {
         "letter": "A",
@@ -3494,7 +3637,7 @@ export const questions = [
   },
   {
     "questionNumber": 9,
-    "question": "3 Which Salesforce org has a complete duplicate copy of the production org including data and configuration?",
+    "question": "Which Salesforce org has a complete duplicate copy of the production org including data and configuration?",
     "options": [
       {
         "letter": "A",
@@ -3584,7 +3727,7 @@ export const questions = [
       },
       {
         "letter": "C",
-        "text": "Use database.query to query the opportunities,"
+        "text": "Use database.query to query the opportunities."
       },
       {
         "letter": "D",
@@ -3603,7 +3746,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "PrimaryId__c custom field exists on the Candidate__c custom object. The field is used to store each candidate's ID number and is marked as Unique in the schema definition"
+        "text": "PrimaryId__c custom field exists on the Candidate__c custom object. The field is used to store each candidate's ID number and is marked as Unique in the schema definition As part of a data enrichment process, Universal Containers has a CSV file that contains updated data for all candidates in the system. The file contains each Candidate's primary ID as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. Which technique should the developer implement to streamline the data upload?"
       },
       {
         "letter": "A",
@@ -3633,23 +3776,23 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer needs to implement a custom SOAP Web Service that is used by an external Web Application. The developer chooses to include helper methods that are not used by the Web Application in the implementation of the Web Service Class."
+        "text": "developer needs to implement a custom SOAP Web Service that is used by an external Web Application. The developer chooses to include helper methods that are not used by the Web Application in the implementation of the Web Service Class. Which code segment shows the correct declaration of the class and methods?"
       },
       {
         "letter": "A",
-        "text": "webservice class WebServiceClass { private Boolean helperMethod() { /* implementation ... */ } global static String updateRecords() { /* implementation ... */ } }"
+        "text": "webservice class WebServiceClass { private Boolean helperMethod() { / implementation \\... / } global static String updateRecords() { / implementation \\... / } }"
       },
       {
         "letter": "B",
-        "text": "global class WebServiceClass { private Boolean helperMethod() { /* implementation ... */ } global String updateRecords() { /* implementation ... */ } }"
+        "text": "global class WebServiceClass { private Boolean helperMethod() { / implementation \\... / } global String updateRecords() { / implementation \\... / } }"
       },
       {
         "letter": "C",
-        "text": "global class WebServiceClass { private Boolean helperMethod() { /* implementation ... */ } webservice static String updateRecords() { /* implementation ... */ } }"
+        "text": "global class WebServiceClass { private Boolean helperMethod() { / implementation \\... / } webservice static String updateRecords() { / implementation \\... / } }"
       },
       {
         "letter": "D",
-        "text": "global class WebServiceClass { webservice Boolean helperMethod() { /* implementation ... */ } webservice static String updateRecords() { /* implementation ... */ } }"
+        "text": "global class WebServiceClass { webservice Boolean helperMethod() { / implementation \\... / } webservice static String updateRecords() { / implementation \\... / } }"
       }
     ],
     "correctAnswers": [
@@ -3663,7 +3806,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer has the following requirements:"
+        "text": "developer has the following requirements: - Calculate the total amount on an Order. - Calculate the line amount for each Line Item based on quantity selected and price. - Move Line Items to a different Order if a Line Item is not in stock. Which relationship implementation supports these requirements on its own?"
       },
       {
         "letter": "A",
@@ -3746,23 +3889,23 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer wants to get access to the standard price book in the org while writing a test class that covers an OpportunityLineltem trigger. Which method allows access to the price book?"
+        "text": "developer wants to get access to the standard price book in the org while writing a test class that covers an OpportunityLineItem trigger. Which method allows access to the price book?"
       },
       {
         "letter": "A",
-        "text": "Use Test.loaddetea() and a static resource to load a standard price book."
+        "text": "Use Test.loadData() and a static resource to load a standard price book."
       },
       {
         "letter": "B",
-        "text": "Use rest .gerstandsrdpricebookid() to get the standard price book ID."
+        "text": "Use Test.getStandardPricebookId() to get the standard price book ID."
       },
       {
         "letter": "C",
-        "text": "Use @istest (ceealloate=cxrue) and delete the existing standard price book."
+        "text": "Use @IsTest(SeeAllData=true) and delete the existing standard price book."
       },
       {
         "letter": "D",
-        "text": "Use @tTessvisibile to allow the test method to see the standard price book."
+        "text": "Use @TestVisible to allow the test method to see the standard price book."
       }
     ],
     "correctAnswers": [
@@ -3776,7 +3919,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "lead developer creates an Apex interface called Laptop. Consider the following code snippet:"
+        "text": "lead developer creates an Apex interface called Laptop. Consider the following code snippet: public class SilverLaptop { // code implementation } How can a developer use the Laptop interface within the SilverLaptop class?"
       },
       {
         "letter": "A",
@@ -3832,7 +3975,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer is asked to prevent anyone other than a user with Sales Manager profile from changing the Opportunity Status to Closed Lost if the lost reason is blank."
+        "text": "developer is asked to prevent anyone other than a user with Sales Manager profile from changing the Opportunity Status to Closed Lost if the lost reason is blank. Which automation allows the developer to satisfy this requirement in the most efficient manner?"
       },
       {
         "letter": "A",
@@ -3894,7 +4037,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer is integrating with a legacy on-premise SOL database."
+        "text": "developer is integrating with a legacy on-premise SQL database. What should the developer use to ensure the data being integrated is matched to the right records in Salesforce?"
       },
       {
         "letter": "A",
@@ -3924,11 +4067,11 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer must write an Apex method that will be called from a Lightning component. The method may delete an Account stored in the accountrec variable."
+        "text": "developer must write an Apex method that will be called from a Lightning component. The method may delete an Account stored in the accountRec variable. Which method should a developer use to ensure only users that should be able to delete Accounts can successfully perform deletions?"
       },
       {
         "letter": "A",
-        "text": "Schema. sObsjectType Account .isDeletable()"
+        "text": "Schema.sObjectType.Account.isDeletable()"
       },
       {
         "letter": "B",
@@ -3940,7 +4083,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "accountRec.s0bjectType.isDelecable()"
+        "text": "accountRec.sObjectType.isDeletable()"
       }
     ],
     "correctAnswers": [
@@ -3954,7 +4097,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "business has two proprietary Order Management Systems (OMS) that create orders from their website and fulfill the orders. When an order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact identified by the email on the order. As the order goes through different stages in the OMS, the integration updates it in Salesforce."
+        "text": "business has two proprietary Order Management Systems (OMS) that create orders from their website and fulfill the orders. When an order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact identified by the email on the order. As the order goes through different stages in the OMS, the integration updates it in Salesforce. It is noticed that each update from the OMS creates a new order record in Salesforce. Which two actions will prevent duplicate order records from being created in Salesforce?"
       },
       {
         "letter": "A",
@@ -4011,7 +4154,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer created a trigger on the Account object and wants to test if the trigger is properly bulkified. The developer team decided that the trigger should be tested with 200 account records with unique names."
+        "text": "developer created a trigger on the Account object and wants to test if the trigger is properly bulkified. The developer team decided that the trigger should be tested with 200 account records with unique names. What two things should be done to create the test data within the unit test with the least amount of code?"
       },
       {
         "letter": "A",
@@ -4042,11 +4185,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "company has a custom object, Sales_Help_Request__c, that has a lookup relationship to Opportunity. The Sales_Help_Request__c has a number field, Number_of_Hours__c, that represents the amount of time spent on the Sales_Help_Request__c."
-      },
-      {
-        "letter": "A",
-        "text": "developer is tasked with creating a field, Total_Hours__c, on Opportunity that should be the sum of all of the Number_of_Hours__c values for the Sales_Help_Request__c records related to that Opportunity."
+        "text": "company has a custom object, Sales_Help_Request__c, that has a lookup relationship to Opportunity. The Sales_Help_Request__c has a number field, Number_of_Hours__c, that represents the amount of time spent on the Sales_Help_Request__c. A developer is tasked with creating a field, Total_Hours__c, on Opportunity that should be the sum of all of the Number_of_Hours__c values for the Sales_Help_Request__c records related to that Opportunity. What should the developer use to implement this?"
       },
       {
         "letter": "A",
@@ -4071,12 +4210,12 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 10,
+    "questionNumber": 9,
     "question": "",
     "options": [
       {
         "letter": "A",
-        "text": "developer is creating an app that contains multiple Lightning web components."
+        "text": "developer is creating an app that contains multiple Lightning web components. One of the child components is used for navigation purposes. When a user clicks a button called Next in the child component, the parent component must be alerted so it can navigate to the next page. How should this be accomplished?"
       },
       {
         "letter": "A",
@@ -4101,7 +4240,7 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 11,
+    "questionNumber": 10,
     "question": "What are three capabilities of the <ltng: require> tag when loading JavaScript resources in Aura components?",
     "options": [
       {
@@ -4133,12 +4272,12 @@ export const questions = [
     "chooseCount": 3
   },
   {
-    "questionNumber": 12,
+    "questionNumber": 11,
     "question": "",
     "options": [
       {
         "letter": "A",
-        "text": "developer must create 3 credit card payment class that provides an implementation of an existing Payment class."
+        "text": "developer must create a credit card payment class that provides an implementation of an existing Payment class. public virtual class Payment { public virtual void makePayment(Decimal amount) { /* implementation */ } }"
       },
       {
         "letter": "A",
@@ -4163,12 +4302,24 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 13,
-    "question": "What are three ways for a developer to execute tests in an org?Choose 3 answers",
+    "questionNumber": 12,
+    "question": "What are three ways for a developer to execute tests in an org?",
     "options": [
       {
         "letter": "A",
         "text": "Metadata API"
+      },
+      {
+        "letter": "B",
+        "text": "Bulk API"
+      },
+      {
+        "letter": "C",
+        "text": "Setup Menu"
+      },
+      {
+        "letter": "D",
+        "text": "Salesforce DX"
       },
       {
         "letter": "E",
@@ -4176,18 +4327,16 @@ export const questions = [
       }
     ],
     "correctAnswers": [
+      "C",
+      "D",
       "E"
     ],
     "chooseCount": 3
   },
   {
-    "questionNumber": 14,
-    "question": "Universal Containers (UC) processes orders in Salesforce in a custom object, Order__c. They also allow sales reps to upload CSV files with thousands of orders at a time.",
+    "questionNumber": 13,
+    "question": "Universal Containers (UC) processes orders in Salesforce in a custom object, Order__c. They also allow sales reps to upload CSV files with thousands of orders at a time. A developer is tasked with integrating orders placed in Salesforce with UC's enterprise resource planning (ERP) system. After the status for an Order__c is first set to 'Placed', the order information must be sent to a REST endpoint in the ERP system that can process one order at a time. What should the developer implement to accomplish this?",
     "options": [
-      {
-        "letter": "A",
-        "text": "developer is tasked with integrating orders placed in Salesforce with UC's enterprise resource planning (ERP) system."
-      },
       {
         "letter": "A",
         "text": "Callout from a Queueable class called from a trigger"
@@ -4211,12 +4360,16 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 15,
+    "questionNumber": 14,
     "question": "When importing and exporting data into Salesforce, which two statements are true?",
     "options": [
       {
         "letter": "A",
         "text": "Bulk API can be used to bypass the storage limits when importing large volumes in development environments"
+      },
+      {
+        "letter": "B",
+        "text": "Bulk API can be used to import large data volumes in development environments without bypassing the storage limits"
       },
       {
         "letter": "C",
@@ -4228,12 +4381,13 @@ export const questions = [
       }
     ],
     "correctAnswers": [
+      "B",
       "C"
     ],
     "chooseCount": 2
   },
   {
-    "questionNumber": 16,
+    "questionNumber": 15,
     "question": "Which code statement includes an Apex method named updateAccounts in the class AccountController for use in a Lightning web component?",
     "options": [
       {
@@ -4259,12 +4413,12 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 17,
+    "questionNumber": 16,
     "question": "",
     "options": [
       {
         "letter": "A",
-        "text": "developer is implementing an Apex class for a financial system. Within the class, the variables creditAmount and debitAmount should not be able to change once a value is assigned."
+        "text": "developer is implementing an Apex class for a financial system. Within the class, the variables creditAmount and debitAmount should not be able to change once a value is assigned. In which two ways can the developer declare the variables to ensure their value can only be assigned one time?"
       },
       {
         "letter": "A",
@@ -4290,7 +4444,7 @@ export const questions = [
     "chooseCount": 2
   },
   {
-    "questionNumber": 18,
+    "questionNumber": 17,
     "question": "When a user edits the Postal Code on an Account, a custom Account text field named \"Timezone\" must be updated based on the values in a PostalCodeToTimezone__c custom object. Which two automation tools can be used to implement this feature?",
     "options": [
       {
@@ -4317,12 +4471,12 @@ export const questions = [
     "chooseCount": 2
   },
   {
-    "questionNumber": 19,
+    "questionNumber": 18,
     "question": "",
     "options": [
       {
         "letter": "A",
-        "text": "developer wrote an Apex method to update a list of Contacts and wants to make it available for use by Lightning web components."
+        "text": "developer wrote an Apex method to update a list of Contacts and wants to make it available for use by Lightning web components. Which annotation should the developer add to the Apex method to achieve this?"
       },
       {
         "letter": "A",
@@ -4347,12 +4501,12 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 20,
+    "questionNumber": 19,
     "question": "",
     "options": [
       {
         "letter": "A",
-        "text": "developer is creating a Lightning web component to show a list of sales records."
+        "text": "developer is creating a Lightning web component to show a list of sales records. The Sales Representative user should be able to see the commission field on each record. The Sales Assistant user should be able to see all fields on the record except the commission field. How should this be enforced so that the component works for both users without showing any errors?"
       },
       {
         "letter": "A",
@@ -4409,7 +4563,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer created a trigger on the Account object and wants to test if the trigger is properly bulkified. The developer team decided that the trigger should be tested with 200 account records with unique names."
+        "text": "developer created a trigger on the Account object and wants to test if the trigger is properly bulkified. The developer team decided that the trigger should be tested with 200 account records with unique names. What two things should be done to create the test data within the unit test with the least amount of code?"
       },
       {
         "letter": "A",
@@ -4492,11 +4646,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "company has a custom object, Sales_Help_Request__c, that has a Lookup relationship to Opportunity. The Sales_Help_Request__c has a number field, Number_of_Hours__c, that represents the amount of time spent on the Sales_Help_Request__c."
-      },
-      {
-        "letter": "A",
-        "text": "developer is tasked with creating a field, Total_Hours__c, on Opportunity that should be the sum of all of the Number_of_Hours__c values for the Sales_Help_Request__c records related to that Opportunity."
+        "text": "company has a custom object, Sales_Help_Request__c, that has a Lookup relationship to Opportunity. The Sales_Help_Request__c has a number field, Number_of_Hours__c, that represents the amount of time spent on the Sales_Help_Request__c. A developer is tasked with creating a field, Total_Hours__c, on Opportunity that should be the sum of all of the Number_of_Hours__c values for the Sales_Help_Request__c records related to that Opportunity. What should the developer use to implement this?"
       },
       {
         "letter": "A",
@@ -4522,7 +4672,7 @@ export const questions = [
   },
   {
     "questionNumber": 6,
-    "question": "Refer to the following code snippet, which is part of a custom controller for a Visualforce page: public void updateContact(Contact thisContact) { thisContact.IsActive__c = false; try { update thisContact; } catch (Exception e) { String errorMessage = 'An error occurred while updating the Contact. ' + e.getMessage(); ApexPages.addmessage(new ApexPages.message(ApexPages.severity.FATAL, errorMessage)); } } In which two ways can the try/catch be enclosed to enforce object-level and field-level permissions and prevent the DML statement from being executed if the current logged-in user does not have the appropriate level of access? (Choose two.)",
+    "question": "Refer to the following code snippet, which is part of a custom controller for a Visualforce page: public void updateContact(Contact thisContact) { thisContact.IsActive__c = false; try { update thisContact; } catch (Exception e) { String errorMessage = 'An error occurred while updating the Contact. ' + e.getMessage(); ApexPages.addmessage(new ApexPages.message(ApexPages.severity.FATAL, errorMessage)); } } In which two ways can the try/catch be enclosed to enforce object-level and field-level permissions and prevent the DML statement from being executed if the current logged-in user does not have the appropriate level of access?",
     "options": [
       {
         "letter": "A",
@@ -4578,12 +4728,12 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 7,
+    "questionNumber": 8,
     "question": "",
     "options": [
       {
         "letter": "A",
-        "text": "PrimaryId__c custom field exists on the Candidate__c custom object. The field is used to store each candidate's ID number and is marked as Unique in the schema definition."
+        "text": "PrimaryId__c custom field exists on the Candidate__c custom object. The field is used to store each candidate's ID number and is marked as Unique in the schema definition. As part of a data enrichment process, Universal Containers has a CSV file that contains updated data for all candidates in the system. The file contains each candidate's primary ID as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. Which technique should the developer implement to streamline the data upload?"
       },
       {
         "letter": "A",
@@ -4591,7 +4741,7 @@ export const questions = [
       },
       {
         "letter": "B",
-        "text": "Update the primaryrd__c field definition to mark it as an External Id."
+        "text": "Update the PrimaryId__c field definition to mark it as an External Id."
       },
       {
         "letter": "C",
@@ -4599,7 +4749,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "Upload the CSV into a custom object related to candidate__c."
+        "text": "Upload the CSV into a custom object related to Candidate__c."
       }
     ],
     "correctAnswers": [
@@ -4608,7 +4758,7 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 8,
+    "questionNumber": 9,
     "question": "Universal Containers (UC) is developing a process for their sales teams that requires all sales reps to go through a set of scripted steps with each new customer they create. In the first step of collecting information, UC's ERP system must be checked via a REST endpoint to see if the customer exists. If the customer exists, the data must be presented to the sales rep in Salesforce. Which two should a developer implement to satisfy the requirements?",
     "options": [
       {
@@ -4635,7 +4785,7 @@ export const questions = [
     "chooseCount": 2
   },
   {
-    "questionNumber": 9,
+    "questionNumber": 10,
     "question": "",
     "options": [
       {
@@ -4644,11 +4794,11 @@ export const questions = [
       },
       {
         "letter": "A",
-        "text": "webservice class WebServiceClass { private Boolean helperMethod() { /* implementation ... */ } webservice static String updateRecords() { /* implementation ... */ } }"
+        "text": "webservice class WebServiceClass { private Boolean helperMethod() { / implementation \\... / } webservice static String updateRecords() { / implementation \\... / } }"
       },
       {
         "letter": "B",
-        "text": "global class WebServiceClass { private Boolean helperMethod() { /* implementation ... */ } webservice static String updateRecords() { /* implementation ... */ } }"
+        "text": "global class WebServiceClass { private Boolean helperMethod() { / implementation \\... / } webservice static String updateRecords() { / implementation \\... / } }"
       }
     ],
     "correctAnswers": [
@@ -4657,7 +4807,7 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 10,
+    "questionNumber": 11,
     "question": "",
     "options": [
       {
@@ -4687,12 +4837,12 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 11,
+    "questionNumber": 12,
     "question": "",
     "options": [
       {
         "letter": "A",
-        "text": "developer is creating a page that allows users to create multiple Opportunities. The developer is asked to verify the current user's default Opportunity record type, and set certain default values based on the record type before inserting the record."
+        "text": "developer is creating a page that allows users to create multiple Opportunities. The developer is asked to verify the current user's default Opportunity record type, and set certain default values based on the record type before inserting the record. How can the developer find the current user's default record type?"
       },
       {
         "letter": "A",
@@ -4717,12 +4867,12 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 12,
+    "questionNumber": 13,
     "question": "",
     "options": [
       {
         "letter": "A",
-        "text": "company has been adding data to Salesforce and has not done a good job of limiting the creation of duplicate Lead records. The developer is considering writing an Apex process to identify duplicates and merge the records together. Which two statements are valid considerations when using merge? (Choose two.)"
+        "text": "company has been adding data to Salesforce and has not done a good job of limiting the creation of duplicate Lead records. The developer is considering writing an Apex process to identify duplicates and merge the records together. Which two statements are valid considerations when using merge?"
       },
       {
         "letter": "A",
@@ -4748,12 +4898,12 @@ export const questions = [
     "chooseCount": 2
   },
   {
-    "questionNumber": 13,
+    "questionNumber": 14,
     "question": "How should a developer write unit tests for a private method in an Apex class?",
     "options": [
       {
         "letter": "A",
-        "text": "Use the SeeANDals annotation."
+        "text": "Use the SeeAllData annotation."
       },
       {
         "letter": "B",
@@ -4765,7 +4915,7 @@ export const questions = [
       },
       {
         "letter": "D",
-        "text": "Mark the Apex cless es global."
+        "text": "Mark the Apex class as global."
       }
     ],
     "correctAnswers": [
@@ -4774,7 +4924,7 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 14,
+    "questionNumber": 15,
     "question": "",
     "options": [
       {
@@ -4804,7 +4954,7 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 15,
+    "questionNumber": 16,
     "question": "If Apex code executes inside the execute() method of an Apex class when implementing the Database.Batchable interface, which two statements are true regarding governor limits?",
     "options": [
       {
@@ -4828,10 +4978,10 @@ export const questions = [
       "B",
       "D"
     ],
-    "chooseCount": 1
+    "chooseCount": 2
   },
   {
-    "questionNumber": 16,
+    "questionNumber": 17,
     "question": "Which Lightning code segment should be written to declare dependencies on a Lightning component, c:accountList, that is used in a Visualforce page?",
     "options": [
       {
@@ -4857,12 +5007,12 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 17,
+    "questionNumber": 18,
     "question": "",
     "options": [
       {
         "letter": "A",
-        "text": "software company uses the following objects and relationships:"
+        "text": "software company uses the following objects and relationships: - Case: to handle customer support issues - Defect__c: a custom object to represent known issues with the company's software - Case_Defect__c: a junction object between Case and Defect__c to represent that a defect is a cause of a customer issue Case and Defect__c have Private organization-wide defaults. What should be done to share a specific Case_Defect__c record with a user?"
       },
       {
         "letter": "A",
@@ -4887,7 +5037,7 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 18,
+    "questionNumber": 19,
     "question": "What should a developer do to check the code coverage of a class after running all tests?",
     "options": [
       {
@@ -4913,7 +5063,7 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 19,
+    "questionNumber": 20,
     "question": "How should a developer write unit tests for a private method in an Apex class?",
     "options": [
       {
@@ -4939,7 +5089,7 @@ export const questions = [
     "chooseCount": 1
   },
   {
-    "questionNumber": 20,
+    "questionNumber": 21,
     "question": "Which scenario is valid for execution by unit tests?",
     "options": [
       {
@@ -4996,7 +5146,7 @@ export const questions = [
     "options": [
       {
         "letter": "A",
-        "text": "developer is tasked to perform a security review of the ContactSearch Apex class that exists in the system. Within the class, the developer identifies the following method as a security threat:"
+        "text": "developer is tasked to perform a security review of the ContactSearch Apex class that exists in the system. Within the class, the developer identifies the following method as a security threat: > Apex - List<Contact> performSearch(String lastName) { - return Database.query('SELECT Id, FirstName, LastName FROM Contact WHERE LastName Like \\'%' + lastName + '%\\''); - } What are two ways the developer can update the method to prevent a SOQL injection attack?"
       },
       {
         "letter": "A",
@@ -5035,7 +5185,7 @@ export const questions = [
       },
       {
         "letter": "C",
-        "text": "Master-detail field from Opportunity to Engineering_Support__c"
+        "text": "Master-detail field from Opportunity to > Engineering_Support__c"
       },
       {
         "letter": "D",
