@@ -2843,7 +2843,7 @@ export const questions = [
       }
     ],
     "correctAnswers": [
-      "B",
+      "C",
       "D"
     ],
     "chooseCount": 2
