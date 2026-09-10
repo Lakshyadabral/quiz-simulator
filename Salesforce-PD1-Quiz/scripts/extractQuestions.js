@@ -93,7 +93,10 @@ function parseQuestionsFromHtml(html) {
     if (!currentQuestion) continue;
     if (!block.text) continue;
 
-    const optionMatch = block.text.match(/^([A-E])[\.\)]?\s+(.*)$/);
+    // Require the period/paren after the letter — the source doc always
+    // writes options as "A. text", so this is safe and avoids false-matching
+    // question stems that start with the word "A " (e.g. "A developer must...").
+    const optionMatch = block.text.match(/^([A-E])[\.\)]\s+(.*)$/);
 
     if (optionMatch) {
       const letter = optionMatch[1];
