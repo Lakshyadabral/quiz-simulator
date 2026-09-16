@@ -2949,7 +2949,7 @@ export const questions = [
       }
     ],
     "correctAnswers": [
-      "C"
+      "A"
     ],
     "chooseCount": 1
   },
