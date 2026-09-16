@@ -2062,8 +2062,8 @@ export const questions = [
       }
     ],
     "correctAnswers": [
-      "A",
-      "B"
+      "B",
+      "D"
     ],
     "chooseCount": 2
   },
@@ -2897,7 +2897,7 @@ export const questions = [
     ],
     "correctAnswers": [
       "B",
-      "C"
+      "A"
     ],
     "chooseCount": 2
   },
