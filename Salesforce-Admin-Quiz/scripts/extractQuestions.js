@@ -10,7 +10,7 @@ const inputFile = path.join(
   __dirname,
   "..",
   "source",
-  "PD1_Master_Practice_Questions.docx"
+  "Admin_Master_Practice_Questions.docx"
 );
 
 const outputFile = path.join(
